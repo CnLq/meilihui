@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset=utf-8"UTF-8">
+<meta name="data-spm" content="a2o1p">
+<title>用户登录页面</title>
+<link rel="icon" href="http://cdn11.mei.com/images/ico/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://cdn11.mei.com/images/ico/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://cdn11.mei.com/images/ico/favicon.png" type="pngimage/png" />
+<link href="../../cdn11.mei.com/css/login.css-v=1.0.css" tppabs="http://cdn11.mei.com/css/login.css?v=1.0" rel="stylesheet" type="text/css">
+<link href="../../cdn11.mei.com/css/base.css-v=1.2.css" tppabs="http://cdn11.mei.com/css/base.css?v=1.2" rel="stylesheet" type="text/css">
+<link href="../../cdn11.mei.com/css/loginPage.css" tppabs="http://cdn11.mei.com/css/loginPage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../cdn11.mei.com/js/common/js.cookie.js" tppabs="http://cdn11.mei.com/js/common/js.cookie.js"></script>
+    <script type="text/javascript" src="../../cdn11.mei.com/js/common/tracking.js" tppabs="http://cdn11.mei.com/js/common/tracking.js"></script>
+<script type="text/javascript" src="../../g.tbcdn.cn/sj/securesdk/0.0.3/securesdk_v2.js" tppabs="http://g.tbcdn.cn/sj/securesdk/0.0.3/securesdk_v2.js" id="J_secure_sdk_v2" data-appkey="68756484"></script>
+</head>
+<body ondblclick="return false;" data-spm="8153018"><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&muserid=&pid=&clk1=&&yunid=&&trid=&asid=AQAAAAAwleNYP3k/IwAAAABqHFasg/FjYw==&sidx=36bOTTCV41hwAstMGYFu7lJ86K8IH2CM&ckx=wwwmeicomusertologinpage|wwwmeicomindexhtml",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&muserid=&pid=&clk1=&&yunid=&&trid=&asid=AQAAAAAwleNYKiblfQAAAADsRI1yAvlPdQ==&sidx=36bOTTCV41hwAstMGYFu7lJ86K8IH2CM&ckx=wwwmeicomusertologinpage|wwwmeicomindexhtml",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+<input type="hidden" id="contextPath" value=""/>
+<input type="hidden" id="basePath" value="http://www.mei.com"/>
+<input type="hidden" value="login" id="pages"/>
+<input type="hidden" value="" id="is_check_code_show" />
+	<div class="login_wrapper">
+    <div class="login_container">
+        <div class="login_header" onclick="javascript:window.location.href = '../index.htm'/*tpa=http://www.mei.com/*/" >
+        </div>
+        <div class="login_content">
+        	<div class="login_main">
+                <div class="hydl_regsiter" data-spm="2028696">
+                    <h2>会员登录</h2>
+                    <span>没有账号？<a href="toregistpage.htm" tppabs="http://www.mei.com/user/toregistpage">免费注册</a></span>
+                </div>
+                <div class="hydl_loginbar">
+                <form  action="http://www.mei.com/user/tologin" method="post"  id="loginForm" autocomplete="on">
+                    <ul>
+                        <li><span >账户名:</span><input id = "userAccount" name="userAccount" type="text" value="已验证手机号/邮箱" onblur = "checkFormInfo('login','no','','','account')"  onfocus = "removeContent()"   maxlength = "64" >
+                        	<p id = "Act_error" class="error"></p>
+                        </li>
+                        <li><span>密码:</span><input name="passWord" type="password" onblur = "checkFormInfo('login','no','','','pwd')" maxlength="20">
+                        	<p id = "Pwd_error"></p>
+                        	<p id="lockInfo" class="hidstyle">出于安全考虑，系统已冻结您的账户，请联系客服：<a onclick="javascript:NTKF.im_openInPageChat();" title="在线咨询" class="buybtn" style="cursor:pointer;">在线咨询</a>或400-664-6698</p>
+                        </li>
+                        <li id="rdm_img" class="hidstyle"><span>验证码:</span>
+                        	<input maxlength="6" onkeyup="value=value.replace(/[^\w/]/ig,'')" class="yanzheng" name="random" type="text" onblur = "checkFormInfo('login','no','','','random')">
+                        	<img id="rdm" src= "getRandom.png" tppabs="http://www.mei.com/user/getRandom" onclick="getResetRandom('',this)" style=" border: 1px solid #999;cursor: pointer;">
+                        	<p class = "Rdm_error" id="Rdm_error"></p>
+                        </li>
+                    </ul>
+                   <input type="hidden" value="yes" id="isRemenbered" name="isRemenbered"/>
+                   <input type="hidden" id="errorTime" value="0"/>
+                   <input type="hidden" id="errorGetRDM" value="6"/>
+                   <input type="hidden" id="errorGetLock" value="10"/>
+                <div style="clear:both;"></div>
+                <div class="hydl_btn">
+                	<a id="submitBtn" onclick="toSubmit('login','no','','','random')" style="cursor: pointer;">会员登录</a>
+                </div>
+                </form> 
+                </div>
+                <div class="hydl_login" data-spm="2028697">
+                    <p><span onclick="isRemenber()" id="isRemenber" class="selected chengepst" style="float:left;">复选框</span>下次自动登录</p>
+                    <a href="tofindPassWord.htm" tppabs="http://www.mei.com/user/tofindPassWord"><span>忘记密码</span></a>
+                </div>
+                <div class="hydl_partner" data-spm="2028698">
+                    <h4>联名登录:</h4>
+                    <a href="#" class="weibo" onclick="toweiboLogin()"></a>
+                	<a href="#" class="zhifubao" onclick="toAlipayLogin()"></a>
+                </div>
+                <div class="xian"></div>
+                <div class="erweima">
+                    <img src="../../cdn11.mei.com/images/login/imges_saomiao.jpg" tppabs="http://cdn11.mei.com/images/login/imges_saomiao.jpg" />
+                  <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+                </div>              
+         	</div>                     
+        </div>
+          <div class="footer_advantage">
+                <ul>
+                <li><a class="a1" href="../Hrbeforepage/PPSQ.html" tppabs="http://www.mei.com/Hrbeforepage/PPSQ.html">100%品牌授权正品</a></li>
+                    <li><a class="a2" href="../myConponsMessage/DDPS.html" tppabs="http://www.mei.com/myConponsMessage/DDPS.html">满688免运费</a></li>
+                    <li><a class="a3" href="../myConponsMessage/SHFW.html" tppabs="http://www.mei.com/myConponsMessage/SHFW.html">7天无条件退货</a></li>
+                    <li><a class="a4" href="../myConponsMessage/THHD.html" tppabs="http://www.mei.com/myConponsMessage/THHD.html">超值折扣</a></li>
+                    <li><a class="a5"  href="../Hrbeforepage/ZCZC.html" tppabs="http://www.mei.com/Hrbeforepage/ZCZC.html">9点限时闪购</a></li>
+                    <li class="footer_advantage_right"><a class="a6" href="../Hrbeforepage/LXWM.html" tppabs="http://www.mei.com/Hrbeforepage/LXWM.html">400-664-6698</a></li>
+                </ul>
+            </div>
+            <p class="footer_copyright">COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有 &nbsp;&nbsp;&nbsp;&nbsp;浙ICP备16004860号-1</p>
+            </div>
+    </div>
+<script src="../../cdn11.mei.com/js/jquery/jquery-1.8.3.min.js" tppabs="http://cdn11.mei.com/js/jquery/jquery-1.8.3.min.js"></script>
+<script src="../../cdn11.mei.com/js/login/md5.js" tppabs="http://cdn11.mei.com/js/login/md5.js"></script>
+<script src="../../cdn11.mei.com/js/login/logincommon.js-v=1.2" tppabs="http://cdn11.mei.com/js/login/logincommon.js?v=1.2"></script>
+<script src="../../cdn11.mei.com/js/login/login_regist.js-v=1.5" tppabs="http://cdn11.mei.com/js/login/login_regist.js?v=1.5"></script>
+<script src="../../cdn11.mei.com/js/common/ga.js" tppabs="http://cdn11.mei.com/js/common/ga.js"></script>
+
+	<!--小能客服系统——全局变量-->
+	<script language="javascript" type="text/javascript">
+		NTKF_PARAM = {
+			siteid:"kf_9199",              //企业id
+			settingid:"kf_9199_1457519760694",           //应答客服组id，在客户端生成代码界面创建
+			uid:"",                //用户id，登录用户必填，游客为空字符串
+			uname:"",             //用户名，登录用户必填，游客为空字符串
+		 	isvip:"",         //是否为vip用户，登录用户可选，游客为"0"
+			userlevel:""   //网站用户级别，此处只支持级别ID不支持级别名称
+		} 
+	</script>
+<script type="text/javascript" src="../../dl.mei.com/js/xn6/ntkfstat.js-siteid=kf_9199" tppabs="http://dl.mei.com/js/xn6/ntkfstat.js?siteid=kf_9199" charset="utf-8"></script>
+
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: '',
+ecomm_pagetype: 'regist',
+ecomm_totalvalue: '',
+};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1028978620;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../www.googleadservices.com/pagead/conversion.js" tppabs="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="../../googleads.g.doubleclick.net/pagead/viewthroughconversion/1028978620/-value=0&guid=ON&script=0.gif" tppabs="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1028978620/?value=0&guid=ON&script=0"/></div>
+</noscript>
+</body>
+</html>

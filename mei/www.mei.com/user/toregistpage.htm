@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset=utf-8"UTF-8">
+<meta name="data-spm" content="a2o1p">
+<title>注册页面</title>
+<link rel="icon" href="http://cdn11.mei.com/images/ico/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://cdn11.mei.com/images/ico/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://cdn11.mei.com/images/ico/favicon.png" type="pngimage/png" />
+<link href="../../cdn11.mei.com/css/login.css-v=1.0.css" tppabs="http://cdn11.mei.com/css/login.css?v=1.0" rel="stylesheet" type="text/css">
+<link href="../../cdn11.mei.com/css/base.css-v=1.2.css" tppabs="http://cdn11.mei.com/css/base.css?v=1.2" rel="stylesheet" type="text/css">
+<link href="../../cdn11.mei.com/css/loginPage.css" tppabs="http://cdn11.mei.com/css/loginPage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../../cdn11.mei.com/js/common/js.cookie.js" tppabs="http://cdn11.mei.com/js/common/js.cookie.js"></script>
+    <script type="text/javascript" src="../../cdn11.mei.com/js/common/tracking.js" tppabs="http://cdn11.mei.com/js/common/tracking.js"></script>
+<!--百度营销-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement('script');
+hm.src = '../../hm.baidu.com/hm.js-637923d68e269543e1944f2ad9cf8388'/*tpa=http://hm.baidu.com/hm.js?637923d68e269543e1944f2ad9cf8388*/;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body  ondblclick="return false;" data-spm="8153033"><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&muserid=&pid=&clk1=&&yunid=&&trid=&asid=AQAAAAAwleNYUDUedAAAAACqmh2mqQ0X0w==&sidx=36bOTTCV41hwAstMkR7As4nxVSwS22BM&ckx=wwwmeicomusertoregistpage|wwwmeicomindexhtml",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+<script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&muserid=&pid=&clk1=&&yunid=&&trid=&asid=AQAAAAAwleNYAR4cWAAAAAAK82acTgCWoA==&sidx=36bOTTCV41hwAstMkR7As4nxVSwS22BM&ckx=wwwmeicomusertoregistpage|wwwmeicomindexhtml",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+<input type="hidden" id="basePath" value="http://www.mei.com"/>
+<input type="hidden" id="contextPath" value=""/>
+
+	<input type="hidden" id="userId" value="">
+	<input type="hidden" id="type" value="">
+	<input type="hidden" id="platform" value="">
+	<input type="hidden" id="randomTelCheckCode" value="7gXbCc"/>
+	
+	<div class="login_wrapper">
+    <div class="login_container">
+        <div class="login_header" onclick="javascript:window.location.href = '../index.htm'/*tpa=http://www.mei.com/*/">
+        </div>
+        <div class="login_content">
+        <div class="login_main">
+            <div class="hydl_regsiter">
+                <h2>免费注册</h2>
+                <span data-spm="2028705">已注册？<a href="tologinpage.htm" tppabs="http://www.mei.com/user/tologinpage">登录</a></span>
+            </div>
+            	<div class="newPeople"><p><span style="color: rgb(255, 0, 0);">新客专享 820元现金券礼包</span></p></div>
+         <div class="hydl_loginbar">
+         	<input type="hidden" value="regist" id="pages"/>
+         	<input type="hidden" value="yes" name="isGetRemind"/>
+            <ul>
+                <li>
+                    <span>账户名:</span><input style="width:253px;" name="userAccount" id="userAccount" type="text" value="手机号/邮箱" onblur = "checkFormInfo('regist','yes','','','account')" onfocus = "removeContent()"  maxlength = "64">
+                    <p id = "Act_error" ></p>
+                    <div id = "EmailIsHad" class="hidstyle">
+                    <p >该邮箱已存在，请更换其他手机号/邮箱或尝试<a href="tologinpage.htm" tppabs="http://www.mei.com/user/tologinpage">登录</a></p>
+                    </div>
+                    <div id = "TelIsHad" class="hidstyle">
+                    <p >该手机号已存在，请更换其他手机号/邮箱或尝试<a href="tologinpage.htm" tppabs="http://www.mei.com/user/tologinpage">登录</a></p>
+                    </div>
+                </li>
+                <li>
+                	<span>密码:</span><input style="width:253px;display:block;" name="passWordtext" id="passWordtext" type="text" value="请输入6-20个字符" onfocus="removePwdContent()"  maxlength="20" >
+                	<input style="width:253px; display:none;" name="passWord" id="passWord" type="password" onblur = "checkFormInfo('regist','no','','','pwd')"  maxlength="20" onkeyup="pwStrength(this.value)">
+                	<p id = "Pwd_error"></p>
+                	<p id = "lowPwd"></p>
+                    <div class="login_safety hidstyle" id="lowMHight">
+                        <span id="low">低</span>
+                        <span id = "middle">中</span>
+                        <span id = "height">高</span>
+                    </div>
+                </li>
+                <li><span>确认密码:</span><input style="width:253px;" name="rpassWord" type="password" onblur = "checkFormInfo('regist','no','','','rpwd')"  maxlength="20">
+                	<p id = "RPwd_error"></p>
+                	<p id = "switch_error"></p>
+                </li>
+                <li id="rdm_img" class="hidestyle"><span>验证码:</span>
+                	<input class="yanzheng" name="random" id="randomImg" onkeyup="value=value.replace(/[^\w/]/ig,'')" maxlength="6" type="text" onblur = "checkFormInfo('regist','no','','','random')" >
+                    <img id="rdm" src= "getRandom.png" tppabs="http://www.mei.com/user/getRandom" onclick="getResetRandom('',this)" style=" border: 1px solid #999;cursor: pointer;">
+                	<p class = "Rdm_error" id="Rdm_error"></p>
+                </li>
+                <li id="rdm_tel" class="showstyle"><span>短信验证码:</span><input class="yanzheng" onkeyup="value=value.replace(/[^\w/]/ig,'')" id="validateCode" name="random1"  maxlength="5" type="text" onblur = "checkFormInfo('regist','no','','','random1')">
+                <a style="cursor: pointer;" onclick="sendMessageCode();" class="sendRandm"><img id="sendRandm" src="../../cdn11.mei.com/images/login/img_03.png" tppabs="http://cdn11.mei.com/images/login/img_03.png"  /></a>
+                <a style="cursor: pointer;" onclick="sendMessageCode();" class="rsendRandm hidstyle"><img id="rsendRandm" src="../../cdn11.mei.com/images/login/img_04.png" tppabs="http://cdn11.mei.com/images/login/img_04.png"  /></a>
+                <div class="ma hidstyle"><b class="times">60</b>秒后重新获取验证码</div>
+                	<p class = "Rdm_error" id="Rdm_error" ></p>
+                </li>
+                <input type="hidden" value="yes" id="isGetRemind"/>
+                <input type="hidden" value="" id="is_check_code_show_reg"/>
+                <input type="hidden" value="1" id="is_reg"/>
+            </ul>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="hydl_btn">
+            	<a id="regist" onclick="toSubmit('regist','no','','','')" style="cursor: pointer;">立即注册</a>
+            </div>
+            <div class="sjzc_login">
+            	<p data-spm="2028709">点击立即注册即表示同意魅力惠<a href="../Hrbeforepage/USEGUIZE.html" tppabs="http://www.mei.com/Hrbeforepage/USEGUIZE.html"><span>使用条款</span></a>
+            	<p><span id="chooseRemind" class="selected chengepst" onclick="isGetRemind()">复选框</span>您将收到魅力惠每日最新上线邮件</p>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="xian"></div>
+            <div class="erweima">
+                <img src="../../cdn11.mei.com/images/login/imges_saomiao.jpg" tppabs="http://cdn11.mei.com/images/login/imges_saomiao.jpg" />
+              <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+            </div>
+          
+         </div>  
+                    
+        </div>
+         <div class="footer_advantage">
+                <ul>
+                <li><a class="a1" href="../Hrbeforepage/PPSQ.html" tppabs="http://www.mei.com/Hrbeforepage/PPSQ.html">100%品牌授权正品</a></li>
+                    <li><a class="a2" href="../myConponsMessage/DDPS.html" tppabs="http://www.mei.com/myConponsMessage/DDPS.html">满688免运费</a></li>
+                    <li><a class="a3" href="../myConponsMessage/SHFW.html" tppabs="http://www.mei.com/myConponsMessage/SHFW.html">7天无条件退货</a></li>
+                    <li><a class="a4" href="../myConponsMessage/THHD.html" tppabs="http://www.mei.com/myConponsMessage/THHD.html">超值折扣</a></li>
+                    <li><a class="a5"  href="../Hrbeforepage/ZCZC.html" tppabs="http://www.mei.com/Hrbeforepage/ZCZC.html">9点限时闪购</a></li>
+                    <li class="footer_advantage_right"><a class="a6" href="../Hrbeforepage/LXWM.html" tppabs="http://www.mei.com/Hrbeforepage/LXWM.html">400-664-6698</a></li>
+                </ul>
+          </div>
+          <p class="footer_copyright">COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有 &nbsp;&nbsp;&nbsp;&nbsp;浙ICP备16004860号-1</p>
+    </div>
+</div>
+<script src="../../cdn11.mei.com/js/jquery/jquery-1.8.3.min.js" tppabs="http://cdn11.mei.com/js/jquery/jquery-1.8.3.min.js"></script>
+<script src="../../cdn11.mei.com/js/login/md5.js" tppabs="http://cdn11.mei.com/js/login/md5.js"></script>
+<script src="../../cdn11.mei.com/js/login/login_regist.js-v=1.5" tppabs="http://cdn11.mei.com/js/login/login_regist.js?v=1.5"></script>
+<script src="../../cdn11.mei.com/js/login/logincommon.js-v=1.2" tppabs="http://cdn11.mei.com/js/login/logincommon.js?v=1.2"></script>
+<script src="../../cdn11.mei.com/js/common/ga.js" tppabs="http://cdn11.mei.com/js/common/ga.js"></script>
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: '',
+ecomm_pagetype: 'regist',
+ecomm_totalvalue: '',
+};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1028978620;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../www.googleadservices.com/pagead/conversion.js" tppabs="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="../../googleads.g.doubleclick.net/pagead/viewthroughconversion/1028978620/-value=0&guid=ON&script=0.gif" tppabs="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1028978620/?value=0&guid=ON&script=0"/></div>
+</noscript>
+</body>
+</html>
